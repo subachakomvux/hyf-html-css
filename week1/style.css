@@ -67,7 +67,14 @@
   li {
     padding-top: 25px;
   }
-   
+  
+  .list-lang {
+    color: rgb(245, 165, 17);
+  }
+  .list-lang li {
+    padding:2px;
+    font-size: 15px;
+  }
   .menu {
     background-color: rgb(73, 57, 57);
     background-image: url('screensaver_1.png');
@@ -118,7 +125,7 @@
     left: 450px;
     height: 100vh;
    /* min-height: 630px;*/
-    width: calc(100vw - 450px);
+    width: calc(100vw - 450px); /*
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -129,9 +136,9 @@
     -webkit-align-items: center;
             align-items: center;
     -webkit-flex-direction: column;
-            flex-direction: column;  
+            flex-direction: column;  */
     text-align: center;
-    padding: 80px;
+    padding: 100px 0 50px 0;
   }
   .dark-bkgnd {
     color:rgb(245, 165, 17);

@@ -1,0 +1,130 @@
+/* general styling begins */
+
+body {
+    font-family: 'Baloo Thambi', cursive;
+    background-image: linear-gradient(rgb(0, 119, 255),yellow,rgb(17, 250, 172));    
+    color:white;
+}
+section {
+    clear:both; 
+}
+
+h1,h2 {
+    text-align:center; 
+}
+h1 {
+    animation-name: heading;
+    animation-duration: 4s;
+    animation-delay:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+h2 {     
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-delay:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    padding:10px 0 10px 0;
+    margin:10px 0 10px 0;
+}
+/* general styling ends */
+
+/* styling begins of float */
+#grid-floats {
+    width:100%;
+    font-family: 'Geo', sans-serif;
+}
+#grid-floats .grid-item {
+    float:left;
+  /*  width:22%;*/
+    background-color:white;
+    color:black;
+    font-family: 'Geo', sans-serif;
+  /*  padding: 4px;
+    margin: 4px;*/
+    border-radius: 10%;
+    list-style-type:none;
+    height:450px;
+ }
+ /* mouse over color change */
+ #grid-floats .grid-item:hover {    
+    background-color: rgb(107, 247, 200);
+ }
+#grid-floats .grid-item img {
+    max-width:100%;
+    height: auto;
+    border-radius:5%;
+    overflow: hidden;
+}
+#grid-floats .grid-item h3, p{
+    text-align:center;
+    overflow:hidden;
+}
+#grid-floats .grid-item h3 {
+    padding:2px;
+}
+/* style 1st item of list */ 
+#grid-floats .grid-item:first-child{
+    background-color:rgb(205, 250, 4);
+  /*  width:45%;*/
+    height:450px;
+    border-radius:5%;
+}
+/* mouse over of 1st item in list */
+#grid-floats .grid-item:first-child:hover {    
+    background-color: rgb(107, 247, 200);
+}
+#grid-floats .grid-item:first-child img{
+    width:auto;
+    height:200px;
+    padding:0 150px;
+}
+#grid-floats .grid-item:first-child h3 {
+    text-align:center;
+}
+
+/* styling ends of float*/
+/* styling begins of flex*/
+#grid-flex {
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-family: 'Geo', sans-serif;
+}
+#grid-flex .grid-item {
+   /* width:22%;
+    margin:6px;
+    padding:0 2px;*/
+    background-color:white;
+    color:black;  
+    border-radius:5%;
+}
+#grid-flex .grid-item img {
+    max-width:100%;
+    height: auto;
+    border-radius:5%;
+    overflow: hidden;
+}
+#grid-flex .grid-item h3 {
+    text-align:center;
+    padding:2px;
+}
+/* mouse over color change */
+#grid-flex .grid-item:hover {
+    background-color:rgb(6, 226, 241);
+}
+
+/* styling ends of flex */
+/* keyframes animation */
+@keyframes heading {
+    from {color: rgb(76, 0, 255);}
+    to {color: yellow;}
+    
+  }
+  @keyframes colorChange {
+    from {background-color: rgb(76, 0, 255);}
+    to {background-color: yellow;}
+    
+  }
