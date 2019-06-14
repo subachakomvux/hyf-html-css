@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Baloo Thambi', cursive;
-    background-image: linear-gradient(rgb(0, 119, 255),yellow,rgb(17, 250, 172));    
+  /*  background-image: linear-gradient(rgb(0, 119, 255),yellow,rgb(17, 250, 172)); */ 
+    background-image: linear-gradient(rgb(0, 119, 255),black,rgb(17, 250, 172));  
     color:white;
 }
 section {
@@ -115,16 +116,20 @@ h2 {
 #grid-flex .grid-item:hover {
     background-color:rgb(6, 226, 241);
 }
+/* mouse over of 1st item in list */
+#grid-flex .grid-item:first-child:hover {    
+    background-color: rgb(6, 226, 241);
+}
 
 /* styling ends of flex */
 /* keyframes animation */
 @keyframes heading {
-    from {color: rgb(76, 0, 255);}
-    to {color: yellow;}
+    from {color: yellow;}
+    to {color: black;}
     
   }
   @keyframes colorChange {
-    from {background-color: rgb(76, 0, 255);}
+    from {background-color: blue;}
     to {background-color: yellow;}
     
   }
