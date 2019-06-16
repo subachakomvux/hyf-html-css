@@ -110,7 +110,13 @@ h2 {
 }
 #grid-flex .grid-item h3 {
     text-align:center;
-    padding:2px;
+    /*
+    padding:2px;*/
+    padding:0.5%;
+}
+/* color scheme of 1st item in list */
+#grid-flex .grid-item:first-child {
+    background-color:rgb(0, 119, 255);
 }
 /* mouse over color change */
 #grid-flex .grid-item:hover {
