@@ -25,24 +25,32 @@
     #grid-flex .grid-item {
         width:30%;
         margin: 2px 2px;
-    }   
+    } 
+    /* styling first and second child for grid-flex */  
     #grid-flex .grid-item:first-child,
     #grid-flex .grid-item:nth-child(2) {
         width:45%;
-        margin: 2px 2px;
+        margin: 2px 2px;   
+        background-color:rgb(0, 119, 255); 
     }
+/* styling image in first  and second child of grid-floats */ 
+    #grid-flex .grid-item:first-child:hover,
+    #grid-flex .grid-item:nth-child(2):hover {
+        background-color: rgb(6, 226, 241);
+    }  
+    
     #grid-floats .grid-item {
         width:30%;
         margin: 2px 2px;
     }
-    /*styling for 1st and 2nd item */
+    /*styling for 1st and 2nd item for grid-floats */
     #grid-floats .grid-item:first-child,
     #grid-floats .grid-item:nth-child(2) {
        width:45%;
        margin: 2px 2px;
        background-color:rgb(205, 250, 4);
    }
-   /* styling image in first  and second child */ 
+   /* styling image in first  and second child of grid-floats */ 
    #grid-floats .grid-item:first-child img,
    #grid-floats .grid-item:nth-child(2) img {
     max-width:100%;
