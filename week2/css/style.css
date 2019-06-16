@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Baloo Thambi', cursive;
-  /*  background-image: linear-gradient(rgb(0, 119, 255),yellow,rgb(17, 250, 172)); */ 
     background-image: linear-gradient(rgb(0, 119, 255),black,rgb(17, 250, 172));  
     color:white;
 }
@@ -18,15 +17,13 @@ h1 {
     animation-duration: 4s;
     animation-delay:4s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 h2 {     
     animation-name: colorChange;
     animation-duration: 5s;
     animation-delay:4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
     padding:10px 0 10px 0;
     margin:10px 0 10px 0;
 }
