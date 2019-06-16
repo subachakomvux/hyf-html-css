@@ -17,7 +17,7 @@
     #grid-floats .grid-item:first-child {
         width:90%;
         margin: 2px;
-    }    
+    }
 }
 
 /* for tablet screens */
@@ -35,11 +35,26 @@
         width:30%;
         margin: 2px 2px;
     }
+    /*styling for 1st and 2nd item */
     #grid-floats .grid-item:first-child,
     #grid-floats .grid-item:nth-child(2) {
        width:45%;
        margin: 2px 2px;
+       background-color:rgb(205, 250, 4);
    }
+   /* styling image in first  and second child */ 
+   #grid-floats .grid-item:first-child img,
+   #grid-floats .grid-item:nth-child(2) img {
+    max-width:100%;
+    height: auto;
+    border-radius:5%;
+    overflow: hidden;
+    margin-left:0;
+    padding-left:0;
+   } 
+   #grid-floats .grid-item:nth-child(2) {
+    background-color:rgb(205, 250, 4);
+   }   
 
 }
 /* for laptop screens */

@@ -74,7 +74,8 @@ h2 {
     border-radius:5%;
 }
 /* mouse over of 1st item in list */
-#grid-floats .grid-item:first-child:hover {    
+#grid-floats .grid-item:first-child:hover,
+#grid-floats .grid-item:nth-child(2):hover{    
     background-color: rgb(107, 247, 200);
 }
 #grid-floats .grid-item:first-child img{
