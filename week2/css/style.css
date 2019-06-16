@@ -69,7 +69,6 @@ h2 {
 /* style 1st item of list */ 
 #grid-floats .grid-item:first-child{
     background-color:rgb(205, 250, 4);
-  /*  width:45%;*/
     height:450px;
     border-radius:5%;
 }
