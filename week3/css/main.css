@@ -79,8 +79,27 @@ a {
     width: 1rem;
 }
 
-.hero-subscribe__cta {
+.hero-subscribe__cta {    
     padding: .875rem 1.6875rem;
+}
+.page-section__footer {
+    padding-top: .9375rem;
+    text-align: center;
+}
+.page-section__cta {
+    background-color: #3367d6;
+    border: 0;
+    border-radius: .125rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 500;
+    min-width: 6.25rem;
+    padding: .75rem 1.25rem .6875rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .skip-to-content {
     -ms-flex-align: center;
@@ -374,6 +393,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .global-footer-nav__brand-link, .global-footer-nav__link {
     display: inline-block;
     vertical-align: middle;
+}
+.global-footer-nav__link {
+    color: #424242;
+    font-size: .875rem;
+    margin-right: 1.125rem;
 }
 a {
     background-color: transparent;
@@ -677,23 +701,7 @@ img {
     margin: 1em 0;
 }
 
-.global-toast-action__subscribe {
-    background-color: #3367d6;
-    border: 0;
-    border-radius: .125rem;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: .875rem;
-    font-weight: 500;
-    min-width: 6.25rem;
-    padding: .75rem 1.25rem .6875rem;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-right: .875rem;
-    padding: .25rem 1rem .1875rem;
-}
+
 h1 {
     font-size: 2em;
     margin: .67em 0;
@@ -800,6 +808,43 @@ h1 {
 }
 .subscribe-form__submit:visited, .subscribe__submit:visited {
     color: #fff;
+}
+.card--grid-featured .card__inner {
+    display: block;
+    min-height: 21.25rem;
+    position: relative;
+}
+
+.subscribe-inline__content-left--without-form {
+    padding-bottom: 2.5rem;
+}
+.global-header__logo, .global-header__logo--light {
+    display: block;
+    height: 1.75rem;
+    width: 11.625rem;
+}
+.global-toast-action__subscribe {
+    background-color: #3367d6;
+    border: 0;
+    border-radius: .125rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 500;
+    min-width: 6.25rem;
+    padding: .75rem 1.25rem .6875rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: .875rem;
+    padding: .25rem 1rem .1875rem;
+}
+.global-toast-action__dismiss--newsletter {
+    color: #3367d6;
+}
+.global-toast-modal {
+    display: inline-block;
 }
 
 /* responsive CSS begins */
@@ -1298,5 +1343,38 @@ h1 {
 @media screen and (min-width: 601px) {
 .card {
     margin-bottom: 1.5rem;
+    }
+}
+@media screen and (min-width: 1001px) {
+.card--grid-featured, .card--grid-featured-data {
+    width: calc(50% - 1.5rem);
+    }
+}
+
+@media screen and (min-width: 601px) {
+.subscribe-inline__content-left--without-form:last-child {
+    margin-right: 0;
+    }
+}
+@media screen and (min-width: 1001px) {
+.subscribe-inline__content-left:last-child {
+    margin-right: 0;
+    }
+}
+@media screen and (min-width: 601px) {
+.subscribe-inline__content-left--without-form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    }
+}
+@media screen and (min-width: 1001px) {
+.subscribe-inline__content-left {
+    margin-left: 8.5298%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
     }
 }
