@@ -90,7 +90,7 @@ a {
     background-color: #3367d6;
     border: 0;
     border-radius: .125rem;
-    color: #fff;
+    color: #fff !important;
     cursor: pointer;
     display: inline-block;
     font-size: .875rem;
@@ -273,10 +273,6 @@ button, input, optgroup, select, textarea {
     padding: .3125rem 0;
     position: relative;
 }
-a {
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
 .global-header__select-wrapper {
     display: none;
     margin: .9375rem 0 0 1.25rem;
@@ -398,10 +394,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #424242;
     font-size: .875rem;
     margin-right: 1.125rem;
-}
-a {
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
 }
 .global-footer-nav {
     margin-bottom: 1.875rem;
@@ -804,7 +796,7 @@ h1 {
 }
 .subscribe__submit--dark, .subscribe__submit--dark:visited {
     background: #fff;
-    color: #3367d6;
+    color: #3367d6 !important;
 }
 .subscribe-form__submit:visited, .subscribe__submit:visited {
     color: #fff;
@@ -823,11 +815,19 @@ h1 {
     height: 1.75rem;
     width: 11.625rem;
 }
+
+.global-toast-action__dismiss--newsletter {
+    color: #3367d6;
+}
+.global-toast-modal {
+    display: inline-block;
+}
+
 .global-toast-action__subscribe {
     background-color: #3367d6;
     border: 0;
     border-radius: .125rem;
-    color: #fff;
+    color: #fff !important;
     cursor: pointer;
     display: inline-block;
     font-size: .875rem;
@@ -840,11 +840,9 @@ h1 {
     margin-right: .875rem;
     padding: .25rem 1rem .1875rem;
 }
-.global-toast-action__dismiss--newsletter {
-    color: #3367d6;
-}
-.global-toast-modal {
-    display: inline-block;
+.global-toast-action__subscribe:focus, .global-toast-action__subscribe:hover {
+    background: #4285f4;
+    color: #fff;
 }
 
 /* responsive CSS begins */
@@ -1256,23 +1254,6 @@ h1 {
     overflow: hidden;
     position: relative;
     }
-}
-.global-toast-action__subscribe {
-    background-color: #3367d6;
-    border: 0;
-    border-radius: .125rem;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: .875rem;
-    font-weight: 500;
-    min-width: 6.25rem;
-    padding: .75rem 1.25rem .6875rem;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-right: .875rem;
-    padding: .25rem 1rem .1875rem;
 }
 @media screen and (min-width: 1001px) {
 .hero-cta__link {
